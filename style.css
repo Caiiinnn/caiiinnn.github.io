@@ -12,7 +12,7 @@ body {
     color: #333;
 }
 header {
-    background-color: #333;
+    background: linear-gradient(to left, #161616, hsl(0, 0%, 16%), #3b3b3b);
     color: #fff;
     padding: 1rem;
     text-align: center;
@@ -41,10 +41,11 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 1.1rem;
+    font-weight: bold;
 }
 
 nav ul li a:hover {
-    color: #24619e;
+    color: #f0b20a;
 }
 
 main {
@@ -132,23 +133,48 @@ p {
     margin-bottom: 1rem;
 }
 figure {
+    justify-content: center;
+    align-items: center;
     text-align: center;
     margin-top: 1rem;
+    display: flex;
+    flex: 3;
+}
+.fig1, .fig2, .fig3{
+    padding: 2em;
+}
+img{
+    width: 280px;
+    height: 425px;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+img:hover{
+    transform: scale(1.0);
+    animation: bounce 0.2s ease-in-out;
+}
+@keyframes bounce{
+    0%{
+        transform: scale(1.0);
+    }50%{
+        transform: scale(0.9);
+    }100%{
+        transform: scale(1.0);
+    }
+}
+#pic {
+    border: 10px solid;
+    border-color: rgb(82, 82, 82);
+    border-radius: 8px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
 }
 figcaption {
     margin-top: 0.5rem;
-    font-style: italic;
 }
-
-video {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-}
-
 iframe {
     display: block;
     margin: 20px auto;
+    max-width: 100%;
 }
 
 footer {
@@ -170,5 +196,9 @@ footer p {
 
     aside.sidebar {
         width: 100%; /* Take full width on small screens */
+    }
+    figure{
+        flex-direction: column;
+        align-items: center;
     }
 }

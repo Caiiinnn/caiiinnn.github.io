@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Portfolio &mdash; Web Developer</title>
-    <link rel="icon" type="image/png" href="facebook.png">
+    <link rel="icon" type="image/png" href="resources/facebook.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,7 +15,7 @@
     <p>A WST Semi-Final Project</p>
     <nav>
         <ul>
-            <li><a href="#about">About</a></li>  
+            <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -25,45 +25,64 @@
 <main>
     <section id="about">
         <div class="about-content">
-            <h3><span class="circ-image"><img src="cow1.png" alt="Circular Image"></span>Hello World, I'm Moohwie!</h3>
+            <h3><span class="circ-image"><img src="resources/cow1.png" alt="Circular Image"></span>Hello World, I'm Moohwie!</h3>
             <p>Welcome to my simple portfolio. As a student and a passionate web developer, I want to share my personal web portfolio with you.
             This online showcase highlights my skills, experience, and projects in building user-friendly, and visually apprealing website and applications.
             </p>
             <p>With a year of experience in web development, I possess a knowledge in HTML and CSS to 
                 build a foundation in creating a visually appealing and responsive web designs.</p>
         </div>
+
+        <aside class="sidebar">
+            <h3>Quick Facts</h3>
+            <ul>
+                <li>Years of Experience: 1</li>
+                <li>Languages: HTML/CSS </li>
+                <li>Hobby: Photography</li>
+            </ul>
+        </aside>
         <div class="about-content2">
             <p>Welcome to my simple portfolio. As a passionate web developer, I want to share my personal web portfolio with you.
             This online showcase highlights my skills, experience, and projects in building user-friendly, and visually apprealing website and applications.</p>
         </div>
-        <aside class="sidebar">
-            <h3>Quick Facts</h3>
-            <ul>
-                <li>Years of Experience: 3</li>
-                <li>Favorite Language: JavaScript</li>
-                <li>Hobby: Photography</li>
-            </ul>
-        </aside>
     </section>
     
-    <section id="video">
-        <h2>My Latest Project Video</h2>
-        <p>Check out this <span>&#128279;</span> video showcasing my latest project:</p>
-        <video controls width="600">
-            <source src="your-video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+    <section id="projects">
+        <h2>Projects &#x002f; Activities</h2>
+        <p>Here are some of my recent project &#x002f; activities:</p> 
+        <figure>
+            <div class="fig1">
+                <a href="https://www.example.com/project1" target="_blank">
+                    <img id="pic" src="resources/screen1.jpg" alt="Project Screenshot" width="300">
+                </a>
+                <figcaption>Project 1: <b>Web design using Figma</b></figcaption>
+            </div>
+            
+            <div class="fig2">
+                <a href="https://www.example.com/project2" target="_blank">
+                    <img id="pic" src="resources/321321.jpg" alt="Project Screenshot" width="300">
+                </a>
+                <figcaption>Activity 1: <b>Login Page in Flutter</b></figcaption>
+            </div>
+
+            <div class="fig3">
+                <a href="https://www.example.com/project3" target="_blank">
+                    <img id="pic" src="resources/screen2.jpg" alt="Project Screenshot" width="300">
+                </a>
+                <figcaption>Activity 2: <b>Tic Tac Toe Game in Dart</b></figcaption>
+            </div>
+        </figure>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <p>Here are some of my recent projects:</p>
-        <figure>
-            <a href="https://www.example.com/project1" target="_blank">
-                <img src="project-image.jpg" alt="Project Screenshot" width="300">
-            </a>
-            <figcaption>Project 1: A beautiful web app</figcaption>
-        </figure>
+    <section id="video">
+        <h2>Video Tutorials</h2>
+        <p>Check out these <span>&#128279;</span> tutorial videos that i used for Web Development </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/HGTJBPNC-Gw?si=qVhS9x5qO51W_fjg" title="YouTube video player" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/wRNinF7YQqQ?si=HBULLIZYxY6vnFkf" title="YouTube video player" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </section>
 
     <section id="map">
