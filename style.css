@@ -27,6 +27,7 @@ header p{
     word-spacing: 5px;
     font-weight: 1000;
     letter-spacing: 5px;
+    border-bottom: 1px solid;
 }
 nav ul {
     list-style-type: none;
@@ -109,18 +110,24 @@ section h2{
 .sidebar {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     background: #e1e1e1;
-    padding: 15px;
+    padding: 5px;
     border-radius: 8px;
 }
 .sidebar h3 {
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     margin-bottom: 10px;
+    border-bottom: 1px solid;
+
 }
 .sidebar ul {
     list-style: none;
+    font-size: 40px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 .sidebar ul li {
-    margin-bottom: 8px;
+    margin-bottom: 5px;
 }
 h3{
     display: flex;
@@ -171,12 +178,31 @@ img:hover{
 figcaption {
     margin-top: 0.5rem;
 }
+.vidframe{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 1rem;
+    display: flex;
+    flex: 2;
+}
+.vid1, .vid2{
+    padding: 5px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 8px;
+    margin: 5px;
+}
 iframe {
     display: block;
     margin: 20px auto;
     max-width: 100%;
 }
-
+.map iframe{
+    border: 5px solid;
+    border-radius: 8px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+}
 footer {
     background-color: #333;
     color: #fff;
@@ -189,15 +215,25 @@ footer p {
 }
 
 @media screen and (max-width: 768px) {
+    header{
+        align-items: center;
+    }
+    nav ul li a{
+        align-items: center;
+        text-align: center;
+    }
     #about {
         flex-direction: column; /* Stack items vertically */
         align-items: center; /* Center items */
     }
-
     aside.sidebar {
         width: 100%; /* Take full width on small screens */
     }
     figure{
+        flex-direction: column;
+        align-items: center;
+    }
+    .vidframe{
         flex-direction: column;
         align-items: center;
     }
